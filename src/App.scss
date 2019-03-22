@@ -1,34 +1,270 @@
-@import './scss/main.scss';
-.App {
-  text-align: left;
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+/*Color harmony is SHADES(See Adobe Color CC to adjust color combinations)*/
+
+/* Primary Color - Dark -> light */
+$primary:(
+    1: #083643,
+    2: #27515C,
+    3: #11738F,
+    4: #3C7D8F,
+    5: #1AB1DC
+);
+
+/* Constant values */
+$primaryFg: #083643;
+$nav-height: 70px;
+$common-pad: 20px;
+$border-radius: 3px;
+$margin: 15px;
+
+%common-trans{
+    -webkit-transition: all linear 0.4s;
+	transition: all linear 0.4s;  
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+@keyframes fade-in {
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
-.App-header {
-  background-color: #fff;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+%fade-in{
+    animation-name: fade-in;
+    animation-duration: 0.5s;    
 }
 
-.App-link {
-  color: #61dafb;
+
+/* shadow */
+%shadow{
+    -webkit-box-shadow: 0 1px 3px rgba(25,25,25,0.1);
+    -moz-box-shadow: 0 1px 3px rgba(25,25,25,0.1);
+    box-shadow: 0 1px 3px rgba(25,25,25,0.1);
+}
+%shadow-hover{
+    -webkit-box-shadow: 0 1px 20px rgba(25,25,25,0.2);
+    -moz-box-shadow: 0 1px 20px rgba(25,25,25,0.2);
+    box-shadow: 0 1px 20px rgba(25,25,25,0.2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Light Background Color */
+$bgColor: (
+    main: #FFF,
+    second: #B8ECD7,
+    third: #F8F8F8
+);
+
+/* Links */
+$linkColor: (
+    text: #476C5E,
+    hover: #B1E001
+);
+
+/* Containers */
+html{
+    font-family: 'Valera Round', sans-serif;
+    font-size:14px;
+}
+body {
+    width: 60%;
+    margin:auto;
+    background-color: map-get($bgColor, third);
+    .wrapper{
+        min-height: calc(100vh - 200px);
+    }
+}
+%resetContainer{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+*{
+    @extend %resetContainer;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* header */
+%header{
+    color: map-get($primary, 1);
+    font-weight: bold;
+}
+$headerSizes:(
+    1: 3.0em,
+    2: 2.0em,
+    3: 1.5em,
+    4: 1.2em,
+    5: 1.1em
+);
+h1,h2,h3,h4{
+    @extend %header;
+}
+h1{
+    font-size:map-get($headerSizes, 1);
+}
+h2{
+    font-size:map-get($headerSizes, 2);
+}
+h3{
+    font-size:map-get($headerSizes, 3);
+}
+h4{
+    font-size:map-get($headerSizes, 4);
+}
+
+
+/* text */
+p{
+    color: #888;
+    font-size: 1.0em;
+    margin-top: 15px;
+}
+
+/* buttons */
+%button{
+    font-size: 1.0em;
+    padding: 15px 10px;
+}
+
+%btn-trans{
+    -webkit-transition: opacity linear 0.1s;
+	transition: opacity linear 0.1s;
+}
+
+button{
+    cursor: pointer;
+    &.primary-btn{
+        @extend %button;
+        color: $primaryFg;
+        background-color: map-get($primary, 1);
+    }
+    &.landing-btn{
+        padding: 15px 30px;
+        color: $primaryFg;
+        margin-top:map-get($headerSizes, 3);
+        margin-bottom:map-get($headerSizes, 2);
+        font-size: map-get($headerSizes, 3);
+        background-color: map-get($primary, 1);
+    }
+    &:active{
+        opacity:0.6;
+    }
+}
+
+
+/* Landing Section */
+.landing{
+    // height: 100vh;
+    background: map-get($bgColor, main);
+    .landingWrapper{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top:40px;
+        .landingText{
+            flex:1;
+            margin-top:5.5em;
+            padding-left:4em;
+            padding-right:4em;
+            p{
+                font-size: 1.2em;
+                opacity:0.7;
+            }
+        }
+        .landingImage{        
+            flex:1;
+            img{
+                float: right;
+                width:100%;
+                background-color:#000;
+                height:100%;
+            }
+        }
+        ul{
+            list-style:none;
+            margin-top:30px;
+            line-height:30px;
+        }
+    }
+    .bottomScroll{
+        height:50px;
+        width:50px;
+        background-color:#333;
+        position: absolute;
+        bottom:100px;
+        right:0;
+    }
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    width:100%;
+    height:60px;
+    padding-top: map-get($headerSizes, 4);
+    color: map-get($primary, 4);
+    font-size: map-get($headerSizes, 5);
+    font-weight: bold;
+    a{
+        text-decoration: none;
+    }
+    span{  
+        cursor: pointer;
+        color: map-get($linkColor, hover);
+    }
+
+}
+
+@import './scss/responsive.scss';
+@import './scss/nav.scss';
+@import './scss/thumb.scss';
+@import './scss/sectioncontainer.scss';
+@import './scss/projectdetail.scss';
+
+
+@media (max-width: $lgDesktop){
+    body{
+        width:80%;
+    }
+}
+
+@media (max-width: $mdDesktop){
+    body{
+        width:90%;
+    }
+}
+@media (max-width: $smDesktop){
+    body{
+        width:100%;
+    }
+}
+@media screen and (max-width: $startMobile) {
+    body{
+        .wrapper {
+            min-height: calc(100vh - 145px);
+            margin-top: 70px;
+        }
+    }
+    .landing{
+        .landingWrapper{
+            flex-direction: column;
+            .landingText{
+                order:2;
+                padding: $common-pad;
+                margin-top:map-get($headerSizes, 4);
+                
+                button.landing-btn{
+                    margin-top: $common-pad;
+                    padding-top: $common-pad;
+                    margin-bottom: $common-pad;
+                    font-size: 1.1em;
+                }
+            }
+        }
+    }
 }

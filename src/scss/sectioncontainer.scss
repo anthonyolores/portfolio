@@ -1,0 +1,51 @@
+.section-container{
+    margin-top: map-get($headerSizes, 1);
+    // margin-bottom: map-get($headerSizes, 2);
+    padding: $margin;
+    @extend %fade-in;
+    .section-title{
+        margin-bottom: map-get($headerSizes, 2);
+        color: map-get($primary, 2);
+        font-weight: bold;
+    }
+    .section-body{
+        p{
+            font-size: map-get($headerSizes, 4);
+            font-weight: normal;
+            line-height: 1.4em;;
+        }
+        .row{
+            img{
+                margin-top: $common-pad;
+                width:100%;
+            }
+        }
+        .column{
+            display:flex;
+            flex-wrap: wrap;
+            div{
+                width:50%;
+                img{
+                    float: right;
+                    width:90%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $startMobile) {
+    .section-container{
+        .section-body{
+            .column{
+                div{
+                    width:100%;
+                     img{
+                        margin-top: $common-pad;
+                        width:100%;
+                     }
+                }
+            }
+        }
+    }
+}

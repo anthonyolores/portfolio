@@ -2,9 +2,9 @@
 //https://codepen.io/taniarascia/pen/dYvvYv
 
 // Navigation Variables
-$nav-background: map-get($primary, 1);
-$nav-font-color: #ffffff;
-$link-hover-color: map-get($primary, 2);
+$nav-background: map-get($bgColor, 1);
+$nav-font-color: map-get($primary, 4);
+$link-hover-color: map-get($linkColor, hover);
 
 // Outer navigation wrapper
 .navigation {
@@ -20,6 +20,14 @@ $link-hover-color: map-get($primary, 2);
   line-height: $nav-height;
   text-transform: uppercase;
   font-size: 1.4em;
+  span{
+    margin-right: $common-pad;
+  }
+  span:not(:first-child){
+    a:hover{
+      color: $link-hover-color;
+    }
+  }
   a,
   a:visited {
     color: $nav-font-color;
@@ -50,9 +58,10 @@ nav {
         background: $nav-background;
         color: $nav-font-color;
         text-decoration: none;
+        font-weight: bold;
+
         &:hover {
-          background: $link-hover-color;
-          color: $nav-font-color;
+          color: $link-hover-color;
         }
         &:not(:only-child):after {
           padding-left: 4px;
@@ -61,10 +70,19 @@ nav {
       } // Dropdown list
       ul li {
         min-width: 190px;
+        background-color: map-get($bgColor, main);
         a {
           padding: 15px $common-pad;
-          line-height: $common-pad;
+          line-height: $common-pad;        
         }
+        &:first-child{
+            padding-top: 10px;
+            border-radius: $border-radius $border-radius 0px 0px;
+          }
+        &:last-child{
+            padding-bottom: 10px;
+            border-radius: 0px 0px $border-radius $border-radius;
+        }  
       }
     }
   }
@@ -75,7 +93,7 @@ nav {
   position: absolute;
   display: none;
   z-index: 1;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  @extend %shadow;
 }
 
 /* Mobile navigation */
@@ -100,27 +118,31 @@ nav {
     position: fixed;
     top: 0px;
     z-index:1;
+    background-color: map-get($bgColor, third);
   }
   nav {
    width: 100%;
     padding: $nav-height 0 15px;
+    
     ul {
-        display: none;
+        display: none;   
+        background:#fff;
       li {
         float: none;
         a {
-          padding: 15px $common-pad;
+          padding: $common-pad;
           line-height: $common-pad;
           font-size: 1.2em;
         }
         ul li a {
           padding-left: 30px;
         }
+        &:first-child{
+            padding-top: 10px;
+          }
         &:last-child{
-            a{
-                padding-bottom: 30px;
-            }       
-        }
+            padding-bottom: 30px;
+        }  
       }
     }
   }

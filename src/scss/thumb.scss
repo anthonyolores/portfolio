@@ -1,0 +1,108 @@
+.thumb-container{
+    display:flex;
+    flex-wrap: wrap;
+    .loading{
+        position: relative;
+        width:100%;
+        margin:$margin;
+        opacity:0.3;
+
+    }
+    .thumb-item{  
+        background-color: map-get($bgColor, main);
+        width: calc(33.33% - 30px);
+        margin:$margin;
+        cursor: pointer;
+        border-radius: $border-radius;
+        @extend %shadow;
+        @extend %fade-in;
+
+        &:hover{
+            @extend %shadow-hover;       
+            @extend %common-trans;
+        }
+        .thumb-img{
+            overflow: hidden;
+            height:250px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: $border-radius $border-radius 0 0;
+
+            
+        }
+        .thumb-text-container{
+            padding: $common-pad;
+            .thumb-title{   
+                font-size: map-get($headerSizes, 4);
+                font-weight: bold;
+                color: map-get($primary, 3);
+                &:hover{
+                    color: map-get($linkColor, hover);
+                }
+            }
+            .thumb-desc{
+                margin-top:5px;
+                font-size: 1.0em;
+                line-height: 1.4em;
+                color: #888;
+            }
+            .thumb-links{
+                margin-top:$common-pad;
+                span{
+                    a{
+                        opacity:0.5;
+                        color: map-get($linkColor, text);
+                        margin-right:$common-pad;
+                        font-size:map-get($headerSizes, 4);                       
+                        &:hover{
+                            opacity: 1;
+                            color: map-get($linkColor, hover);
+                        }
+                    }
+                    &.preview{
+                        float: right;
+                        // padding: 3px $common-pad;
+                        font-weight: bold;
+                        padding-top:2px;
+                        color: map-get($primary, 5);
+                        // background-color: #f8f8f8;
+                        opacity:0.9;
+                        &:hover{
+                            color: map-get($linkColor, hover);
+                        }
+                        &.status{
+                            margin-right:$common-pad;
+                            opacity:0.5;
+                            color: map-get($linkColor, text);
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: $smDesktop){
+    .thumb-container{
+        .thumb-item{
+            width: calc(50% - 20px);
+            margin:10px;
+        }
+    }
+}
+@media screen and (max-width: $startMobile) {
+    .thumb-container{
+        .thumb-item{
+            width: 100%;              
+            .thumb-img{
+            }      
+            img{
+                width:100%;
+            }
+                
+        }
+    }
+}
