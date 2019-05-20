@@ -1,15 +1,16 @@
 {
-  "main.css": "/portfolio/static/css/main.bfb23b9f.chunk.css",
-  "main.js": "/portfolio/static/js/main.7b26041d.chunk.js",
-  "main.js.map": "/portfolio/static/js/main.7b26041d.chunk.js.map",
+  "main.css": "/portfolio/static/css/main.551001c0.chunk.css",
+  "main.js": "/portfolio/static/js/main.a42e625b.chunk.js",
+  "main.js.map": "/portfolio/static/js/main.a42e625b.chunk.js.map",
   "runtime~main.js": "/portfolio/static/js/runtime~main.f308c8e6.js",
   "runtime~main.js.map": "/portfolio/static/js/runtime~main.f308c8e6.js.map",
-  "static/js/2.9a38432c.chunk.js": "/portfolio/static/js/2.9a38432c.chunk.js",
-  "static/js/2.9a38432c.chunk.js.map": "/portfolio/static/js/2.9a38432c.chunk.js.map",
+  "static/js/2.eec6ebdc.chunk.js": "/portfolio/static/js/2.eec6ebdc.chunk.js",
+  "static/js/2.eec6ebdc.chunk.js.map": "/portfolio/static/js/2.eec6ebdc.chunk.js.map",
   "index.html": "/portfolio/index.html",
-  "precache-manifest.b77fbc83331f0ee63d5c4fb45cc2dd41.js": "/portfolio/precache-manifest.b77fbc83331f0ee63d5c4fb45cc2dd41.js",
+  "precache-manifest.75deb068da62f1fb3eafcf7edcd06bfc.js": "/portfolio/precache-manifest.75deb068da62f1fb3eafcf7edcd06bfc.js",
   "service-worker.js": "/portfolio/service-worker.js",
-  "static/css/main.bfb23b9f.chunk.css.map": "/portfolio/static/css/main.bfb23b9f.chunk.css.map",
+  "static/css/main.551001c0.chunk.css.map": "/portfolio/static/css/main.551001c0.chunk.css.map",
+  "static/media/logo.svg": "/portfolio/static/media/logo.b98b553f.svg",
   "static/media/p1_0.png": "/portfolio/static/media/p1_0.b99708ac.png",
   "static/media/p1_1.png": "/portfolio/static/media/p1_1.acea639f.png",
   "static/media/p1_2.png": "/portfolio/static/media/p1_2.66e9d08e.png",
@@ -17,5 +18,8 @@
   "static/media/p1_4.png": "/portfolio/static/media/p1_4.dec9170e.png",
   "static/media/p1_5.png": "/portfolio/static/media/p1_5.414d493d.png",
   "static/media/p2_0.jpg": "/portfolio/static/media/p2_0.285b6290.jpg",
-  "static/media/p3_0.png": "/portfolio/static/media/p3_0.2a7dff88.png"
+  "static/media/p3_0.png": "/portfolio/static/media/p3_0.2a7dff88.png",
+  "static/media/p4_0.jpg": "/portfolio/static/media/p4_0.c37378c6.jpg",
+  "static/media/p4_1.png": "/portfolio/static/media/p4_1.9ce97b47.png",
+  "static/media/p4_2.png": "/portfolio/static/media/p4_2.abb293e8.png"
 }
