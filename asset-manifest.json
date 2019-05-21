@@ -1,15 +1,15 @@
 {
-  "main.css": "/portfolio/static/css/main.551001c0.chunk.css",
-  "main.js": "/portfolio/static/js/main.d2bde375.chunk.js",
-  "main.js.map": "/portfolio/static/js/main.d2bde375.chunk.js.map",
+  "main.css": "/portfolio/static/css/main.05066b91.chunk.css",
+  "main.js": "/portfolio/static/js/main.48297575.chunk.js",
+  "main.js.map": "/portfolio/static/js/main.48297575.chunk.js.map",
   "runtime~main.js": "/portfolio/static/js/runtime~main.f308c8e6.js",
   "runtime~main.js.map": "/portfolio/static/js/runtime~main.f308c8e6.js.map",
-  "static/js/2.eec6ebdc.chunk.js": "/portfolio/static/js/2.eec6ebdc.chunk.js",
-  "static/js/2.eec6ebdc.chunk.js.map": "/portfolio/static/js/2.eec6ebdc.chunk.js.map",
+  "static/js/2.397a1eb0.chunk.js": "/portfolio/static/js/2.397a1eb0.chunk.js",
+  "static/js/2.397a1eb0.chunk.js.map": "/portfolio/static/js/2.397a1eb0.chunk.js.map",
   "index.html": "/portfolio/index.html",
-  "precache-manifest.6ed45c59e8f407987a6c7f995b10f57a.js": "/portfolio/precache-manifest.6ed45c59e8f407987a6c7f995b10f57a.js",
+  "precache-manifest.93d016aa6cea4d8f837f16a775091c6f.js": "/portfolio/precache-manifest.93d016aa6cea4d8f837f16a775091c6f.js",
   "service-worker.js": "/portfolio/service-worker.js",
-  "static/css/main.551001c0.chunk.css.map": "/portfolio/static/css/main.551001c0.chunk.css.map",
+  "static/css/main.05066b91.chunk.css.map": "/portfolio/static/css/main.05066b91.chunk.css.map",
   "static/media/logo.svg": "/portfolio/static/media/logo.b98b553f.svg",
   "static/media/p1_0.png": "/portfolio/static/media/p1_0.b99708ac.png",
   "static/media/p1_1.png": "/portfolio/static/media/p1_1.acea639f.png",
@@ -21,5 +21,8 @@
   "static/media/p3_0.png": "/portfolio/static/media/p3_0.2a7dff88.png",
   "static/media/p4_0.jpg": "/portfolio/static/media/p4_0.c37378c6.jpg",
   "static/media/p4_1.png": "/portfolio/static/media/p4_1.9ce97b47.png",
-  "static/media/p4_2.png": "/portfolio/static/media/p4_2.abb293e8.png"
+  "static/media/p4_2.png": "/portfolio/static/media/p4_2.abb293e8.png",
+  "static/media/p5_0.png": "/portfolio/static/media/p5_0.48688e38.png",
+  "static/media/p5_1.png": "/portfolio/static/media/p5_1.e903f50c.png",
+  "static/media/p5_2.png": "/portfolio/static/media/p5_2.8aff1678.png"
 }
