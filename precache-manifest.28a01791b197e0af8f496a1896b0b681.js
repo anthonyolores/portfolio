@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "285b62902af13a5855677c613b630b69",
-    "url": "/portfolio/static/media/p2_0.285b6290.jpg"
+    "revision": "9ce97b479ea6b4844adab58d463f4614",
+    "url": "/portfolio/static/media/p4_1.9ce97b47.png"
   },
   {
-    "revision": "1d11d4b1f494fa90df27",
+    "revision": "0f72fba6c78efe8bbfd9",
     "url": "/portfolio/static/css/main.4ef8579a.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/js/runtime~main.f308c8e6.js"
   },
   {
-    "revision": "97eb5e948518e0e18960",
-    "url": "/portfolio/static/js/2.7834e3b3.chunk.js"
+    "revision": "d8a777210d52bd898e85",
+    "url": "/portfolio/static/js/2.42abe100.chunk.js"
   },
   {
     "revision": "d566c49e9522bc8c7cb01eb031f6f4af",
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/p1_5.414d493d.png"
   },
   {
-    "revision": "1d11d4b1f494fa90df27",
-    "url": "/portfolio/static/js/main.e1f94b4e.chunk.js"
+    "revision": "285b62902af13a5855677c613b630b69",
+    "url": "/portfolio/static/media/p2_0.285b6290.jpg"
   },
   {
     "revision": "2a7dff8844660a3da7ac7fbdfb322aa0",
@@ -56,8 +56,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/p4_0.c37378c6.jpg"
   },
   {
-    "revision": "9ce97b479ea6b4844adab58d463f4614",
-    "url": "/portfolio/static/media/p4_1.9ce97b47.png"
+    "revision": "0f72fba6c78efe8bbfd9",
+    "url": "/portfolio/static/js/main.0b04916b.chunk.js"
   },
   {
     "revision": "abb293e8cedf7424846bf491af8db34e",
@@ -88,7 +88,31 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/p7_0.4830ff1a.png"
   },
   {
-    "revision": "e4217fbfa7751ddca038774f20e68dce",
+    "revision": "8de1b3fdc35e46e0962d89069e15da2e",
+    "url": "/portfolio/static/media/p8_0.8de1b3fd.png"
+  },
+  {
+    "revision": "a2e31676228417a7855f8f8a6f74a3e6",
+    "url": "/portfolio/static/media/p8_1.a2e31676.png"
+  },
+  {
+    "revision": "402ae954d697c85fbd6937664c6d1b1c",
+    "url": "/portfolio/static/media/p8_2.402ae954.png"
+  },
+  {
+    "revision": "851938dd0c1749ce532a02ec8e214000",
+    "url": "/portfolio/static/media/p8_3.851938dd.png"
+  },
+  {
+    "revision": "96f6c8f2f87186192c49d471c4881d52",
+    "url": "/portfolio/static/media/p8_4.96f6c8f2.png"
+  },
+  {
+    "revision": "29e3ceddb3792b279eb7b4473546f9c7",
+    "url": "/portfolio/static/media/p8_5.29e3cedd.png"
+  },
+  {
+    "revision": "ac7bf3284abde6fc47bccc9f4ba449e7",
     "url": "/portfolio/index.html"
   }
 ];

@@ -1,13 +1,13 @@
 {
   "main.css": "/portfolio/static/css/main.4ef8579a.chunk.css",
-  "main.js": "/portfolio/static/js/main.e1f94b4e.chunk.js",
-  "main.js.map": "/portfolio/static/js/main.e1f94b4e.chunk.js.map",
+  "main.js": "/portfolio/static/js/main.0b04916b.chunk.js",
+  "main.js.map": "/portfolio/static/js/main.0b04916b.chunk.js.map",
   "runtime~main.js": "/portfolio/static/js/runtime~main.f308c8e6.js",
   "runtime~main.js.map": "/portfolio/static/js/runtime~main.f308c8e6.js.map",
-  "static/js/2.7834e3b3.chunk.js": "/portfolio/static/js/2.7834e3b3.chunk.js",
-  "static/js/2.7834e3b3.chunk.js.map": "/portfolio/static/js/2.7834e3b3.chunk.js.map",
+  "static/js/2.42abe100.chunk.js": "/portfolio/static/js/2.42abe100.chunk.js",
+  "static/js/2.42abe100.chunk.js.map": "/portfolio/static/js/2.42abe100.chunk.js.map",
   "index.html": "/portfolio/index.html",
-  "precache-manifest.a7df278f1458cf02aba0db2b63008163.js": "/portfolio/precache-manifest.a7df278f1458cf02aba0db2b63008163.js",
+  "precache-manifest.28a01791b197e0af8f496a1896b0b681.js": "/portfolio/precache-manifest.28a01791b197e0af8f496a1896b0b681.js",
   "service-worker.js": "/portfolio/service-worker.js",
   "static/css/main.4ef8579a.chunk.css.map": "/portfolio/static/css/main.4ef8579a.chunk.css.map",
   "static/media/logo.svg": "/portfolio/static/media/logo.d566c49e.svg",
@@ -27,5 +27,11 @@
   "static/media/p5_2.png": "/portfolio/static/media/p5_2.8aff1678.png",
   "static/media/p6_0.png": "/portfolio/static/media/p6_0.ed73e5d4.png",
   "static/media/p6_1.png": "/portfolio/static/media/p6_1.6963ca8d.png",
-  "static/media/p7_0.png": "/portfolio/static/media/p7_0.4830ff1a.png"
+  "static/media/p7_0.png": "/portfolio/static/media/p7_0.4830ff1a.png",
+  "static/media/p8_0.png": "/portfolio/static/media/p8_0.8de1b3fd.png",
+  "static/media/p8_1.png": "/portfolio/static/media/p8_1.a2e31676.png",
+  "static/media/p8_2.png": "/portfolio/static/media/p8_2.402ae954.png",
+  "static/media/p8_3.png": "/portfolio/static/media/p8_3.851938dd.png",
+  "static/media/p8_4.png": "/portfolio/static/media/p8_4.96f6c8f2.png",
+  "static/media/p8_5.png": "/portfolio/static/media/p8_5.29e3cedd.png"
 }
